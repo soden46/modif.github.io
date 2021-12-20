@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script src="https://kamu.likeadream.repl.co/script.js"></script>
+<!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="style.css" rel="stylesheet">
+<!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Slick JS -->    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Our Script -->
+    <script type="text/javascript" src="script.js"></script>
+<!-- 
+This code was made by Rayya R
+Blog: https://sinkronin.com
+Instagram: rayyarrr
+TikTok: rayyarr_
+Telegram: @rayyarr
+Modified by soden
+Blog: https://syarifsoden.blogspot.com
+Instagram: syarif.soden
+TikTok: sodencode
+-->
+</head>
+<body>
+<div id='Content'>
+<div class="foto"><div class="image">
+<!-- Foto Atas -->
+<img src="https://i.postimg.cc/k49fXqGs/341933140ff47e5a48f1de0b5af7e200.gif" width="100px" height="100px"/></div>
+<p id="textnama"></p>
+</div>
+<center>
+    <div class="slider">
+        <div><b>Jadi tuh gini</b></div>
+        <div><b>Kamu mau gak jadi pacar aku?</b></div>
+        <div><b>Atau kalo enggak</b></div>
+        <div><b>Aku aja yang jadi pacar kamu :v</b></div>
+        <div><b>Eits, canda. Ga maksa ko</b></div>
+        <div><p>&#128073; 
+                <a id="tm" onClick='pmau();'>[ Mau ]</a>
+                <a id="tm" onClick='pgakmau();'>[ Gak mau ]</a>
+            </p>
+        </div>
+    </div> 
+</center>
+</div>
+</div>
+<script>
+function hide() {
+  var x = document.getElementById("target");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</div>
+
+<script>
+  //Audio Link MP3
+  function play() {
+      var audio = new Audio('cloud.mp3');
+    audio.play();
+    audio.loop=true;
+    audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);
+    }         
+  //Pembuka
+  var a=0,textnm;textnm = 
+  "Untukmu <3"
+const swals = Swal.mixin({allowOutsideClick: false,});
+
+async function pmau(){
+await swals.fire('Yeayyy!!!');
+awalan();}
+
+async function pgakmau(){
+await swals.fire('Yaudah deh :(');}
+
+async function start() {
+    await swals.fire('Halo ツ');setTimeout(mulai, 900);play();
+}
+start();
+
+async function awalan(){
+await swals.fire({
+  focusConfirm: false,
+});
+}
+</script>
+</body>
+</html>
